@@ -1,7 +1,6 @@
 import numpy as np
 def icosahedron(e):
-    m=e/2
-
+    #triplet list: [0]=x,[1]=y,[2]=z
     w=[0,0,0]
     #use of the list's being cyclic backward
     index=0
