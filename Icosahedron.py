@@ -1,6 +1,10 @@
 import numpy as np
 def icosahedron(e):
-    #triplet list: [0]=x,[1]=y,[2]=z
+    m=e/2
+    # Accordibg to Wikipedia
+    #The vertices of an icosahedron with edge-length 2, centered at the origin,
+    # are described by all the cyclic permutations of
+    #(0, +/-1, +/-phi)
     w=[0,0,0]
     #use of the list's being cyclic backward
     index=0
@@ -13,7 +17,9 @@ def icosahedron(e):
                 x[index]=w[0]
                 y[index]=w[1]
                 z[index]=w[2]
-                index+=1
+               index+=1
+    
+    #getting a unit edge
     for a in range(n):
         x[a]=x[a]/2*e
         y[a]=y[a]/2*e
@@ -58,7 +64,7 @@ d=1.
 #supposed edge length of minimal energy
 edge=2.**(1./6.)*d
 x,y,z=icosahedron(edge)
-vlj=E(x,y,z,d,e,n)
+E(x,y,z,d,e,n)
 
 for a in range(n):
        fout.write("Ar {} {} {} \n".format(x[a],y[a],z[a]))
