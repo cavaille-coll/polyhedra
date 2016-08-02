@@ -1,9 +1,9 @@
 import numpy as np
 def icosahedron(e):
-    # Accordibg to Wikipedia
-    #The vertices of an icosahedron with edge-length 2, centered at the origin,
-    # are described by all the cyclic permutations of
-    #(0, +/-1, +/-phi)
+# Accordibg to Wikipedia
+#The vertices of an icosahedron with edge-length 2, centered at the origin,
+# are described by all the cyclic permutations of
+#(0, +/-1, +/-phi)
     w=[0,0,0]
     #use of the list's being cyclic backward
     index=0
